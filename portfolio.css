@@ -1,0 +1,109 @@
+:root {
+    box-sizing: border-box;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+}
+
+
+header {
+    position: fixed;
+    background-color: brown;
+    color: white;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    padding: 1.5rem;
+    border-bottom: 2px solid black;
+  
+
+    & #navbar {
+        display: flex;
+        justify-content: end;
+        gap: 2rem;
+        font-size: 1.4rem;
+        
+        & a {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+    
+}
+
+
+.abc {
+    height: 50px;
+}
+
+#welcome-section {
+    height: 100vh;
+    background-color: #181719;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    & h1 {
+        color: white;
+        font-size: 3rem;
+        margin-bottom: 0px;
+    }
+
+    & .caption {
+        color: brown;
+        font-size: 2rem;
+    }
+}
+
+#projects {
+    background-color: skyblue;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    
+
+    & a {
+        text-decoration: none;
+        color: white;
+    
+        background-color: #181719b8;
+        display: block;
+        margin: 20px;
+
+        & img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            display: block;
+        }
+
+        & p{
+            display: block;
+            text-align: center;
+            padding: 1rem;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+#contact {
+    background-color: #181719;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.handle-link {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+
+@media only screen and (min-width: 480px) {
+    #projects {
+        grid-template-columns: auto auto;
+    }
+}
