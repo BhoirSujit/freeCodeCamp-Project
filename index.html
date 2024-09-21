@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" >
+</head>
+<body>
+    <main>
+        <div class="heading">
+            <h1 id="title">freeCodeCamp Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+        </div>
+        <div class="card">
+            <form id="survey-form">
+                <div class="ele">
+                    <label id="name-label" for="name">Name</label>
+                    <input  required type="text" id="name" placeholder="Enter your name">
+                </div>
+                <div class="ele">
+                    <label id="email-label" for="email">Email</label>
+                    <input  required type="email" id="email" placeholder="Enter your Email">
+                </div>
+                <div class="ele">
+                    <label id="number-label" for="number">Age (optional)</label>
+                    <input min="1" max="150"  required type="number" id="number" placeholder="Age">
+                </div>
+                <div class="ele">
+                    <label for="dropdown">Which option best describes your current role?</label>
+                  <select  id="dropdown">
+                    <option  value="student">student</option>
+                    <option value="Full Time Job">Full Time Job</option>
+                  </select>
+                </div>
+                <div class="ele">
+                    <label for="">Would you recommend freeCodeCamp to a friend?</label>
+                    <input name="recommendFriend" required type="radio"  value="Definitely"> Definitely
+                    <input name="recommendFriend" required type="radio"  value="Maybe"> Maybe
+                    <input name="recommendFriend" required type="radio"  value="Not Sure"> Not Sure
+                </div>
+                <div class="ele">
+                    <label for="">What would you like to see improved? (check all that apply)</label>
+                    <input type="checkbox" name="check" value="FEP"> Front-end Project
+                    <input type="checkbox" name="check" value="BEP"> Back-end Project
+                    
+
+                </div>
+                <div class="ele">
+                    <label for="textarea">Any comments or suggestions?</label>
+                    <textarea placeholder="Enter your comment here" rows="10" name="textarea" id="textarea"></textarea>
+                </div>
+                <div class="ele">
+                    <button id="submit" type="submit">Submit</button>
+                </div>
+            </form>
+
+        </div>
+    </main>
+</body>
+</html>
